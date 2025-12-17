@@ -140,9 +140,9 @@ public class App {
     static void mostrarDatosEstudiante() {
         if (!nombreEstudiante.equals("N/A")) {
             System.out.println("Nombre del estudiante: " + nombreEstudiante);
-            System.out.println("Nota 1: " + nota1);
-            System.out.println("Nota 2: " + nota2);
-            System.out.println("Nota 3: " + nota3);
+            System.out.printf("Nota 1: %.2f\n", nota1);
+            System.out.printf("Nota 2: %.2f\n", nota2);
+            System.out.printf("Nota 3: %.2f\n", nota3);
 
         } else {
             System.out.println("No hay datos del estudiante registrado.");
