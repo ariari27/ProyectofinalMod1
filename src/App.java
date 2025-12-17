@@ -112,14 +112,14 @@ public class App {
         return nota;
     }
 
-    static double calcularPromedio() {
+    static void calcularPromedio() {
         if (!nombreEstudiante.equals("N/A")) {
             promedio = (nota1 + nota2 + nota3) / 3;
             System.out.printf("Promedio: %.2f\n", promedio);
-            return promedio;
+            return;
         }
         System.out.println("No hay datos del estudiante registrado.");
-        return -1;
+        return;
     }
 
     static void limpiarDatos() {
