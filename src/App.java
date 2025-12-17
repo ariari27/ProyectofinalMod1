@@ -103,9 +103,13 @@ public class App {
             if (i != 0) {
                 System.out.println("Nota inválida. Intente de nuevo.");
             }
-            System.out.println(mensaje);
-            String entrada = x.nextLine().trim().replace(",", ".");
-            nota = Double.parseDouble(entrada);
+            try {
+                System.out.println(mensaje);
+                String entrada = x.nextLine().trim().replace(",", ".");
+                nota = Double.parseDouble(entrada);
+            } catch (NumberFormatException e) {
+                System.out.println("Entrada inválida. Por favor ingrese un número válido.");
+            }
             i++;
         }
         return nota;
