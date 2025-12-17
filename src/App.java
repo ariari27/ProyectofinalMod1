@@ -133,7 +133,6 @@ public class App {
     static void setEstado (){
         if (!nombreEstudiante.equals("N/A")) {
             estado= (promedio < 60) ? "Reprobado" : "Aprobado";
-            System.out.println("Estado del estudiante: " + estado);
         }
         System.out.println("Estado del estudiante: " + estado);
     }
